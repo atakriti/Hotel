@@ -1,0 +1,17 @@
+@import "./var";
+@import "./nav";
+@import "./hovers";
+@import "./animation";
+@import "./main-container";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns:5vw 1fr 5vw ;
+    grid-template-rows: 5vh 80vh 70vh;
+    background-color: $background;
+}

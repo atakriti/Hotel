@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="home-btn">
+                <i class="fa-solid fa-bed"></i>
+                <a href="#">Home</a>
+            </div>
+           <div>
+                <a href="#">Rooms</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+           </div>
+        </nav>
+        <button>Book Now</button>
+    </header>
+    
+    <main>
+        <section class="bg">
+            <img src="./img/bg.jpg" alt="">
+            <form>
+                <h1><i class="fa-solid fa-bed"></i>Hotel Name</h1>
+                <div class="form-container">
+                    <div class="checkin">
+                        <label for="checkIn"><i class="fa-solid fa-calendar-days"></i>Check in</label>
+                        <input type="date" name="checkIn" id="1">
+                    </div>
+                    <div class="checkout">
+                        <label for="checkOut"><i class="fa-solid fa-calendar-days"></i>Checkout</label>
+                        <input type="date" name="checkOut" id="2">
+                    </div>
+                    <div class="adults">
+                        <label for="adult"><i class="fa-solid fa-child"></i>Adults</label>
+                        <input type="number" name="adult" id="3">
+                    </div>
+                    <div class="kids">
+                        <label for="kids"><i class="fa-solid fa-child"></i>Kids</label>
+                        <input type="number" name="kids" id="4">
+                    </div>
+                    <button><i class="fa-solid fa-magnifying-glass"></i>Search availability</button>
+
+                </div>
+            </form>
+
+
+        </section>
+    </main>
+</body>
+</html>
