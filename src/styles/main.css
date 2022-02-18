@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 header {
   grid-column: 1/4;
   grid-row: 1/2;
@@ -30,6 +31,15 @@ header ul li {
   overflow: hidden;
   cursor: pointer;
 }
+header ul li:hover {
+  background-color: orange;
+  transform: scale(1.1);
+  transition: 0.6s;
+  border-radius: 10px;
+}
+header ul li:hover i {
+  color: black;
+}
 header ul li i {
   margin-right: 10%;
   font-size: 1.5vw;
@@ -54,25 +64,8 @@ header button {
   overflow: hidden;
   outline: none;
 }
-
-header ul li:hover {
-  background-color: orange;
-  transform: scale(1.1);
-  transition: 0.6s;
-  border-radius: 10px;
-}
-header ul li:hover i {
-  color: black;
-}
-
 header button:hover {
   background-color: grey;
-  transform: scale(1.1);
-  transition: 0.6s;
-}
-
-.bg form button:hover {
-  background-color: gray;
   transform: scale(1.1);
   transition: 0.6s;
 }
@@ -82,6 +75,7 @@ main {
   grid-column: 2/3;
 }
 main .bg {
+  grid-row: 2/3;
   position: relative;
   filter: drop-shadow(2px 2px 10px black);
 }
@@ -127,13 +121,13 @@ main .bg form .form-container .checkin-out div, main .bg form .form-container .a
 }
 main .bg form .form-container .checkin-out input, main .bg form .form-container .adult-kids input {
   font-size: 1.1vw;
-  width: 70%;
+  width: 60%;
 }
 main .bg form .form-container .checkin-out label, main .bg form .form-container .adult-kids label {
   font-size: 1.2vw;
-  width: 39%;
+  width: 38%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 main .bg form h1 {
   background-color: orange;
@@ -156,8 +150,59 @@ main .bg form button {
   overflow: hidden;
   cursor: pointer;
 }
+main .bg form button:hover {
+  background-color: gray;
+  transform: scale(1.1);
+  transition: 0.6s;
+}
 main .bg form button i {
   margin-right: 5%;
+}
+
+.rooms {
+  grid-row: 3/4;
+  height: 100%;
+}
+.rooms .rooms-title {
+  line-height: 4vh;
+  font-size: 1.5vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.rooms .rooms-container {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+}
+.rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
+  border: 1px #e2e2e2 solid;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  box-shadow: 4px 4px 10px black;
+  border-radius: 10px;
+}
+.rooms .rooms-container .single-room img, .rooms .rooms-container .double-room img, .rooms .rooms-container .deluxe-room img {
+  width: 100%;
+  border-radius: 10px;
+}
+.rooms .rooms-container .single-room button, .rooms .rooms-container .double-room button, .rooms .rooms-container .deluxe-room button {
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  font-size: 1.2vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.rooms .rooms-container .single-room button:hover, .rooms .rooms-container .double-room button:hover, .rooms .rooms-container .deluxe-room button:hover {
+  background-color: orange;
+  transition: 0.6s;
 }
 
 * {
@@ -167,9 +212,11 @@ main .bg form button i {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 5vw 1fr 5vw;
-  grid-template-rows: 5vh 80vh 70vh;
+  grid-template-rows: 5vh 80vh 80vh;
+  height: 2000px;
 }
 
 /*# sourceMappingURL=main.css.map */

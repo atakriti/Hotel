@@ -1,16 +1,18 @@
 @import "./var";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import "./nav";
-@import "./hovers";
 @import "./animation";
 @import "./main-container";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: grid;
-    grid-template-columns:5vw 1fr 5vw ;
-    grid-template-rows: 5vh 80vh 70vh;
+body {
+    font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: 5vw 1fr 5vw;
+  grid-template-rows: 5vh 80vh 80vh;
+  height: 2000px;
 }

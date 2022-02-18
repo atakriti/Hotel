@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Hotel</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-       <ul>
-           <li><i class="fa-solid fa-bed"></i><a href="#">Home</a></li>
-           <li><a href="#">Rooms</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-       </ul>
-        <button>Book Now</button>
+      <ul>
+        <li><i class="fa-solid fa-bed"></i><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button>Book Now</button>
     </header>
-    
+
     <main>
-        <section class="bg">
-            <img src="./img/bg.jpg" alt="">
-            <form>
-                <h1><i class="fa-solid fa-bed"></i>Hotel Name</h1>
-                <div class="form-container">
-                    <div class="checkin-out">
-                        <div class="checkin">
-                            <label for="checkIn"><i class="fa-solid fa-calendar-days"></i>Check in</label>
-                            <input type="date" name="checkIn" id="1">
-                        </div>
-                        <div class="checkout">
-                            <label for="checkOut"><i class="fa-solid fa-calendar-days"></i>Checkout</label>
-                            <input type="date" name="checkOut" id="2">
-                        </div>
-                    </div>
-                    <div class="adult-kids">
-                        <div class="adults">
-                            <label for="adult"><i class="fa-solid fa-child"></i>Adults</label>
-                            <input value="1" type="number" name="adult" id="3">
-                        </div>
-                        <div class="kids">
-                            <label for="kids"><i class="fa-solid fa-child"></i>Kids</label>
-                            <input value="1" type="number" name="kids" id="4">
-                        </div>     
-                    </div>             
+      <section class="bg">
+        <img src="./img/bg.jpg" alt="" />
+        <form>
+          <h1><i class="fa-solid fa-bed"></i>Hotel Name</h1>
+          <div class="form-container">
+            <div class="checkin-out">
+              <div class="checkin">
+                <label for="checkIn"
+                  ><i class="fa-solid fa-calendar-days"></i>Check in</label
+                >
+                <input type="date" name="checkIn" id="1" />
+              </div>
+              <div class="checkout">
+                <label for="checkOut"
+                  ><i class="fa-solid fa-calendar-days"></i>Checkout</label
+                >
+                <input type="date" name="checkOut" id="2" />
+              </div>
+            </div>
+            <div class="adult-kids">
+              <div class="adults">
+                <label for="adult"
+                  ><i class="fa-solid fa-child"></i>Adults</label
+                >
+                <input value="1" type="number" name="adult" id="3" />
+              </div>
+              <div class="kids">
+                <label for="kids"><i class="fa-solid fa-child"></i>Kids</label>
+                <input value="1" type="number" name="kids" id="4" />
+              </div>
+            </div>
+          </div>
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>Search availability
+          </button>
+        </form>
+      </section>
+
+      <section class="rooms">
+        <div class="rooms-title">
+          <h3>Rooms</h3>
+          <p>
+            Make yourself at home is our slogan. We offer the best beds in the
+            industry. Sleep well and rest well.
+          </p>
+        </div>
+        <div class="rooms-container">
+            <div class="single-room">
+                <img title="Single room" src="./img/room_single.jpg" alt="single room">
+                <h3>Single Room</h3>
+                <small>From $99</small>
+                <p>Single bed</p>
+                <p>15m²</p>
+                <div class="icons-rooms">
+                    <i class="fa-solid fa-bath"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
                 </div>
-                <button><i class="fa-solid fa-magnifying-glass"></i>Search availability</button>
-            </form>
+                <button>Choose Room</button>
+            </div>
 
+            <div class="double-room">
+                <img title="Double room" src="./img/room_double.jpg" alt="single room">
+                <h3>Double Room</h3>
+                <small>From $149</small>
+                <p>Queen-size bed</p>
+                <p>25m²</p>
+                <div class="icons-rooms">
+                    <i class="fa-solid fa-bath"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                <button>Choose Room</button>
+            </div>
 
-        </section>
+            <div class="deluxe-room">
+                <img title="Deluxe room" src="./img/room_deluxe.jpg" alt="single room">
+                <h3>Deluxe Room</h3>
+                <small>From $199</small>
+                <p>King-size bed</p>
+                <p>40m²</p>
+                <div class="icons-rooms">
+                    <i class="fa-solid fa-bath"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-martini-glass-empty"></i>
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <button>Choose Room</button>
+            </div>
 
+            
+        </div>
+      </section>
+
+      <section class="about">
+          <div class="about-text">
+              <h3>About</h3>
+          </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
