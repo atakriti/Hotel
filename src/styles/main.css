@@ -3,8 +3,9 @@ header {
   grid-column: 1/4;
   grid-row: 1/2;
   background-color: #414141;
-  width: 100%;
-  height: 5vh;
+  min-width: 100%;
+  padding: 1% 0%;
+  min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,23 +76,23 @@ main {
   grid-column: 2/3;
 }
 main .bg {
-  grid-row: 2/3;
   position: relative;
+  overflow: hidden;
   filter: drop-shadow(2px 2px 10px black);
 }
 main .bg img {
-  width: 100%;
-  height: 80vh;
+  min-width: 100%;
+  min-height: 100%;
   border-radius: 0px 0px 10px 10px;
 }
 main .bg form {
-  border: 1px #c3c3c3 solid;
+  border: 1px #e2e2e2 solid;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
-  height: 40%;
+  min-width: 50%;
+  min-height: 40%;
   box-shadow: 2px 2px 10px black;
   border-radius: 10px;
   position: absolute;
@@ -99,7 +100,7 @@ main .bg form {
   top: 20%;
 }
 main .bg form .form-container {
-  height: 80%;
+  min-height: 30vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -109,7 +110,8 @@ main .bg form .form-container {
 main .bg form .form-container .checkin-out, main .bg form .form-container .adult-kids {
   display: flex;
   flex-direction: row;
-  height: 40%;
+  min-height: 15vh;
+  padding: 1% 0%;
   align-items: center;
   justify-content: space-between;
 }
@@ -160,38 +162,57 @@ main .bg form button i {
 }
 
 .rooms {
-  grid-row: 3/4;
-  height: 100%;
+  height: auto;
 }
 .rooms .rooms-title {
-  line-height: 4vh;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 100%;
   font-size: 1.5vw;
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 .rooms .rooms-container {
   display: flex;
   width: 100%;
-  height: 80%;
+  min-height: 100%;
   justify-content: space-between;
 }
 .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
-  border: 1px #e2e2e2 solid;
   width: 30%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.1vw;
   box-shadow: 4px 4px 10px black;
   border-radius: 10px;
+  overflow: auto;
 }
 .rooms .rooms-container .single-room img, .rooms .rooms-container .double-room img, .rooms .rooms-container .deluxe-room img {
   width: 100%;
   border-radius: 10px;
 }
+.rooms .rooms-container .single-room h3, .rooms .rooms-container .single-room small, .rooms .rooms-container .single-room p, .rooms .rooms-container .double-room h3, .rooms .rooms-container .double-room small, .rooms .rooms-container .double-room p, .rooms .rooms-container .deluxe-room h3, .rooms .rooms-container .deluxe-room small, .rooms .rooms-container .deluxe-room p {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+}
+.rooms .rooms-container .single-room .icons-rooms, .rooms .rooms-container .double-room .icons-rooms, .rooms .rooms-container .deluxe-room .icons-rooms {
+  margin-top: 4%;
+  width: 30%;
+  min-height: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .rooms .rooms-container .single-room button, .rooms .rooms-container .double-room button, .rooms .rooms-container .deluxe-room button {
-  padding: 2% 3%;
+  margin-top: 4%;
+  width: 100%;
+  min-height: 7%;
+  padding: 1% 0%;
   background-color: black;
   color: white;
   font-size: 1.2vw;
@@ -205,6 +226,191 @@ main .bg form button i {
   transition: 0.6s;
 }
 
+.about {
+  width: 100%;
+  min-height: 14%;
+  padding-top: 3%;
+  overflow: hidden;
+}
+.about .text-map {
+  display: flex;
+}
+.about .text-map .about-text {
+  font-size: 1.2vw;
+  overflow: hidden;
+}
+.about .text-map .about-text p {
+  min-height: 100%;
+}
+.about .text-map img {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+}
+.about .about-info {
+  display: flex;
+  height: 10%;
+  padding: 1% 0%;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about-info div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  font-size: 1.2vw;
+}
+.about .about-info div:nth-child(2) {
+  width: 15%;
+}
+.about .about-info div:nth-child(3) {
+  width: 18%;
+}
+.about .on-demand {
+  background-color: #ee4747;
+  display: flex;
+  min-height: 100%;
+  padding: 1% 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+  overflow: hidden;
+}
+.about .on-demand i {
+  color: white;
+}
+
+.our-hotels {
+  width: 100%;
+}
+.our-hotels .our-hotels-text {
+  height: 10vh;
+  padding: 1% 0%;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 41%;
+}
+.our-hotels .our-hotels-imgs {
+  height: 87%;
+  display: grid;
+  grid-template-columns: 50% 23% 24.4%;
+  gap: 2vh 1.1vw;
+  grid-template-rows: 47%;
+}
+.our-hotels .our-hotels-imgs img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.our-hotels .our-hotels-imgs img:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.our-hotels .our-hotels-imgs img:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.our-hotels .our-hotels-imgs img:nth-child(3) {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.our-hotels .our-hotels-imgs img:nth-child(4) {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.our-hotels .our-hotels-imgs img:nth-child(5) {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.get-offer {
+  margin-top: 5%;
+  width: 100%;
+  padding: 1% 0%;
+  min-height: 40vh;
+  background-color: gray;
+  border-radius: 10px;
+}
+.get-offer form {
+  overflow: auto;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.4vw;
+  padding: 0% 2%;
+}
+.get-offer form input {
+  font-size: 1.4vw;
+  min-height: 20%;
+  padding: 1% 0%;
+  border-radius: 10px;
+  outline: none;
+}
+.get-offer form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  min-height: 10%;
+  padding: 1% 0%;
+  margin-top: 1%;
+  font-size: 1.1vw;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.get-offer form button:hover {
+  background-color: #cecece;
+}
+
+.contact {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+  font-size: 1.2vw;
+  padding: 1% 2%;
+}
+.contact form {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact form h3, .contact form p {
+  min-height: 6vh;
+  padding: 1% 0%;
+}
+.contact form i {
+  margin-right: 2%;
+}
+.contact .contact-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 20vh;
+}
+.contact .contact-inputs input {
+  font-size: 1.3vw;
+  margin-bottom: 2%;
+}
+.contact .contact-inputs button {
+  min-height: 5vh;
+  padding: 1% 0%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -215,8 +421,7 @@ body {
   font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 5vw 1fr 5vw;
-  grid-template-rows: 5vh 80vh 80vh;
-  height: 2000px;
+  grid-template-rows: 5vh 80vh 1fr;
 }
 
 /*# sourceMappingURL=main.css.map */

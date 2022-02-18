@@ -3,22 +3,22 @@ main{
     grid-column: 2/3;
     
    .bg{
-       grid-row: 2/3;
     position: relative;
+    overflow: hidden;
     filter: drop-shadow(2px 2px 10px black);
        img{
-        width: 100%;
-        height: 80vh;
+        min-width: 100%;
+        min-height: 100%;
         border-radius: 0px 0px 10px 10px;
        }
        form{
-           border: 1px rgb(195, 195, 195) solid;
+           border: 1px rgb(226, 226, 226) solid;
            background-color: white;
            display: flex;
            flex-direction: column;
            justify-content: space-between;
-           width: 50%;
-           height: 40%;
+           min-width: 50%;
+           min-height: 40%;
            box-shadow: 2px 2px 10px black;
            border-radius: 10px;
            position: absolute;
@@ -26,7 +26,7 @@ main{
            top: 20%;
 
            .form-container{
-               height: 80%;
+               min-height: 30vh;
                display: flex;
                justify-content: space-around;
                flex-direction: column;
@@ -35,7 +35,8 @@ main{
                .checkin-out,.adult-kids{
                    display: flex;
                    flex-direction: row;
-                   height: 40%;
+                   min-height: 15vh;
+                   padding: 1% 0%;
                    align-items: center;
                    justify-content: space-between;
 
@@ -92,37 +93,60 @@ main{
 }
 // ================ Rooms ==================
 .rooms{
-    grid-row: 3/4;
-    height: 100%;
+    height: auto;
     .rooms-title{
-        line-height: 4vh;
+        height: 12vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // line-height: 4vh;
+        line-height: 100%;
         font-size: 1.5vw;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        // padding-top: 2%;
+        // padding-bottom: 2%;
     }
     .rooms-container{
         display: flex;
         width: 100%;
-        height: 80%;
+        min-height: 100%;
         justify-content: space-between;
         .single-room,.double-room,.deluxe-room{
             img{
                 width: 100%;
                 border-radius: 10px;
-
             }
-            border: 1px rgb(226, 226, 226) solid;
+            
             width: 30%;
-            height: 100%;
+            min-height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             font-size: 1.1vw;
             box-shadow: 4px 4px 10px black;
             border-radius: 10px;
+            overflow: auto;
+            h3,small,p{
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                margin-top: 4%;
+            }
+            .icons-rooms{
+                margin-top: 4%;
+                width: 30%;
+                min-height: 7%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
 
             button{
-                padding: 2% 3%;
+                margin-top: 4%;
+                width: 100%;
+                min-height: 7%; 
+                padding: 1% 0%;               
                 background-color: black;
                 color: white;
                 font-size: 1.2vw;
@@ -142,3 +166,195 @@ main{
     
 }
 // ================== About =================
+.about{
+    width: 100%;
+    min-height: 14%;
+    padding-top: 3%;
+    overflow: hidden;
+    .text-map{
+        display: flex;
+
+        .about-text{
+            font-size: 1.2vw;
+            overflow: hidden;
+            p{
+                min-height: 100%;
+            }
+        }
+        img{
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px black;
+        }
+    }
+    .about-info{
+        display: flex;
+        height:10%;
+        padding: 1% 0%;
+        justify-content: space-between;
+        align-items: center;
+        div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        font-size: 1.2vw;
+        &:nth-child(2){
+            width: 15%;
+        }
+        &:nth-child(3){
+            width: 18%;
+        }
+        }
+    }
+    .on-demand{
+        background-color: rgb(238, 71, 71);
+        display: flex;
+        min-height: 100%;
+        padding: 1% 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.6vw;
+        border-radius: 5px;
+        box-shadow: 3px 3px 10px black;
+        overflow: hidden;
+        i{
+            color: white;
+        }
+    }
+}
+// ============== our hotels ==========
+.our-hotels{
+    width: 100%;
+    .our-hotels-text{
+        height: 10vh;
+        padding: 1% 0%;
+        font-size: 1.2vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 41%;
+    }
+    .our-hotels-imgs{
+        height: 87%;
+        display: grid;
+        grid-template-columns: 50% 23% 24.4%;
+        gap: 2vh 1.1vw;
+        grid-template-rows: 47%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        img:nth-child(1){
+           
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+        img:nth-child(2){
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        img:nth-child(3){          
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        img:nth-child(4){            
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+        img:nth-child(5){          
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+    }
+
+}
+// ============= get offer =========
+.get-offer{
+    margin-top: 5%;
+    width: 100%;
+    padding: 1% 0%;
+    min-height: 40vh;
+    background-color: gray;
+    border-radius: 10px;
+
+    form{
+        overflow: auto;
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.4vw;
+        padding: 0% 2%;
+      
+       
+         input{
+             font-size: 1.4vw;
+             min-height:20%;
+             padding: 1% 0%;
+    border-radius: 10px;
+    outline: none;
+         }
+         button{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 20%;
+             min-height: 10%;
+             padding: 1% 0%;
+             margin-top: 1%;
+             font-size: 1.1vw;
+             border-radius: 10px;
+             border: none;
+             outline: none;
+             background-color: orange;
+             cursor: pointer;
+             transition: 0.6s;
+             &:hover{
+                 background-color: rgb(206, 206, 206);
+             }
+         }
+
+    }
+}
+// ================ Contact ============
+.contact{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    font-size: 1.2vw;
+    padding: 1% 2%;
+    form{
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3,p{
+            min-height: 6vh;
+            padding: 1% 0%;
+        }
+        i{
+            margin-right: 2%;
+        }
+    }
+    .contact-inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 20vh;
+        input{
+            font-size: 1.3vw;
+            margin-bottom: 2%;
+        }
+        button{
+            min-height: 5vh;
+            padding:1% 0%;
+
+        }
+    }
+}
