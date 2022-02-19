@@ -133,6 +133,7 @@ main .bg form .form-container .checkin-out label, main .bg form .form-container 
 }
 main .bg form h1 {
   background-color: orange;
+  font-size: 2vw;
   border-radius: 10px;
   overflow: hidden;
   padding: 3% 3%;
@@ -141,6 +142,7 @@ main .bg form h1 i {
   margin-right: 2%;
 }
 main .bg form button {
+  font-size: 1.1vw;
   width: 30%;
   padding: 1.2% 0%;
   margin-left: 3%;
@@ -163,6 +165,7 @@ main .bg form button i {
 
 .rooms {
   height: auto;
+  padding-top: 3%;
 }
 .rooms .rooms-title {
   height: 12vh;
@@ -180,7 +183,7 @@ main .bg form button i {
 }
 .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
   width: 30%;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -229,7 +232,7 @@ main .bg form button i {
 .about {
   width: 100%;
   min-height: 14%;
-  padding-top: 3%;
+  padding-top: 5%;
   overflow: hidden;
 }
 .about .text-map {
@@ -407,21 +410,158 @@ main .bg form button i {
   margin-bottom: 2%;
 }
 .contact .contact-inputs button {
+  width: 20%;
+  font-size: 1.1vw;
   min-height: 5vh;
+  border-radius: 10px;
   padding: 1% 0%;
+  background-color: orange;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.contact .contact-inputs button:hover {
+  background-color: #cecece;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: 5vw 1fr 5vw;
+  grid-template-columns: 5vw 90vw 5vw;
   grid-template-rows: 5vh 80vh 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  header ul {
+    min-width: 100%;
+  }
+  header ul li {
+    width: 20%;
+  }
+  header ul li i {
+    font-size: 3vw;
+  }
+  header ul li a {
+    font-size: 3vw;
+  }
+  header button {
+    display: none;
+  }
+
+  main .bg {
+    height: 60%;
+  }
+  main .bg form {
+    height: 50%;
+  }
+  main .bg form .form-container {
+    min-height: 60%;
+    min-width: 80vw;
+  }
+  main .bg form .form-container .checkin-out, main .bg form .form-container .adult-kids {
+    min-height: 10vh;
+  }
+  main .bg form .form-container .checkin-out label, main .bg form .form-container .adult-kids label {
+    font-size: 2vw;
+  }
+  main .bg form .form-container .checkin-out input, main .bg form .form-container .adult-kids input {
+    font-size: 2vw;
+  }
+
+  .rooms {
+    padding-top: 7%;
+    flex-direction: column;
+  }
+  .rooms .rooms-title {
+    flex-direction: column;
+    font-size: 3vw;
+  }
+  .rooms .rooms-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
+    height: 30%;
+    width: 48%;
+    margin-top: 2%;
+  }
+  .rooms .rooms-container .single-room h3, .rooms .rooms-container .single-room small, .rooms .rooms-container .single-room p, .rooms .rooms-container .double-room h3, .rooms .rooms-container .double-room small, .rooms .rooms-container .double-room p, .rooms .rooms-container .deluxe-room h3, .rooms .rooms-container .deluxe-room small, .rooms .rooms-container .deluxe-room p {
+    font-size: 3vw;
+  }
+  .rooms .rooms-container .single-room .icons-rooms, .rooms .rooms-container .double-room .icons-rooms, .rooms .rooms-container .deluxe-room .icons-rooms {
+    font-size: 3vw;
+  }
+  .rooms .rooms-container .single-room button, .rooms .rooms-container .double-room button, .rooms .rooms-container .deluxe-room button {
+    font-size: 3vw;
+  }
+
+  .about {
+    padding-top: 10%;
+  }
+  .about .text-map {
+    flex-direction: column;
+  }
+  .about .text-map .about-text {
+    font-size: 3vw;
+  }
+  .about .text-map img {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .about .about-info {
+    margin-top: 2%;
+  }
+  .about .about-info div {
+    font-size: 2vw;
+    width: 33%;
+  }
+  .about .about-info div:nth-child(2) {
+    width: 30%;
+  }
+  .about .about-info div:nth-child(3) {
+    width: 30%;
+  }
+  .about .on-demand {
+    margin-top: 3%;
+    font-size: 2vw;
+  }
+
+  .our-hotels .our-hotels-text {
+    font-size: 3vw;
+    width: 100%;
+  }
+
+  .get-offer {
+    min-height: 10vh;
+  }
+  .get-offer form {
+    min-height: 30vh;
+    font-size: 2.5vw;
+  }
+  .get-offer form input {
+    font-size: 2.5vw;
+  }
+  .get-offer form button {
+    font-size: 2.5vw;
+  }
+
+  .contact form h3, .contact form p {
+    font-size: 2.5vw;
+  }
+  .contact .contact-inputs input {
+    font-size: 2.5vw;
+  }
+  .contact .contact-inputs button {
+    font-size: 2vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

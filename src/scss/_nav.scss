@@ -12,7 +12,6 @@ header{
     top: 0;
     z-index: 1;
     overflow: hidden;
-    // animation: nav 2s ;
 
     ul{
         display: flex;
@@ -21,6 +20,7 @@ header{
         justify-content: space-around;
         align-items: center;
         overflow: hidden;
+
 
         li{
         display: flex;

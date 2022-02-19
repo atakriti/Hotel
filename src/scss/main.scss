@@ -1,19 +1,162 @@
 @import "./var";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import "./nav";
-@import "./animation";
 @import "./main-container";
+@import "./mobile.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', sans-serif;
   display: grid;
-  grid-template-columns: 5vw 1fr 5vw;
+  grid-template-columns: 5vw 90vw 5vw;
     // grid-template-rows: 5vh 80vh 100vh 85vh 80vh 40vh;
      grid-template-rows: 5vh 80vh 1fr;
+}
+// media query 
+@media only screen and (max-width:600px) {
+  header{
+             ul{
+                 min-width: 100%;
+               li{
+                 width: 20%;
+                 i{
+                     font-size: 3vw;
+                 }
+                 a{
+                     font-size: 3vw;
+                 }
+               }
+             }
+             button{
+                 display: none;
+             }
+         }
+        //  main bg
+        main .bg{
+        height: 60%;
+        form{
+          height: 50%;
+          .form-container{
+            min-height: 60%;
+          min-width:80vw;
 
+            .checkin-out,.adult-kids{
+              min-height: 10vh;
+              label{
+                font-size: 2vw;
+              }
+              input{
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+        }
+        // rooms
+      .rooms{
+        padding-top: 7%;
+        flex-direction: column;
+        .rooms-title{
+          flex-direction: column;
+          font-size: 3vw;
+        }
+        .rooms-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+          .single-room,.double-room,.deluxe-room{
+            height: 30%;
+            width: 48%;
+            margin-top: 2%;
+            h3,small,p{
+              font-size: 3vw;
+            }
+            .icons-rooms{
+              font-size: 3vw;
+            }
+            button{
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+      // about
+      .about{
+        padding-top: 10%;
+        .text-map{
+          flex-direction: column;
+          .about-text{
+            font-size: 3vw;
+          }
+          img{
+            width: 100%;
+            margin-top: 2%;
+          }
+        }
+        .about-info{
+          margin-top: 2%;
+          div{
+            font-size: 2vw;
+            width: 33%;
+            &:nth-child(2){
+              width: 30%;
+          }
+          &:nth-child(3){
+              width: 30%;
+          }
+          }
+        }
+        .on-demand{
+          margin-top: 3%;
+          font-size: 2vw;
+        }
+        
+      }
+      // out hotels
+      .our-hotels{
+        .our-hotels-text{
+          font-size: 3vw;
+          width: 100%;
+        }
+
+      }
+      // get offer
+      .get-offer{
+        min-height: 10vh;
+        form{
+          min-height: 30vh;
+          font-size: 2.5vw;
+
+          input{
+            font-size: 2.5vw;
+          }
+          button{
+            font-size: 2.5vw;
+          }
+
+        }
+      }
+      // contact
+      .contact{
+        form{
+          h3,p{
+            font-size: 2.5vw;
+          }
+        }
+        .contact-inputs{
+          input{
+            font-size: 2.5vw;            
+          }
+          button{
+            font-size: 2vw;
+          }
+        }
+      }
+
+ 
 }
