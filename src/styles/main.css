@@ -182,7 +182,7 @@ main .bg form button i {
   justify-content: space-between;
 }
 .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
-  padding: 2%;
+  padding: 1%;
   width: 30%;
   height: 100%;
   display: flex;
@@ -206,7 +206,7 @@ main .bg form button i {
 }
 .rooms .rooms-container .single-room .icons-rooms, .rooms .rooms-container .double-room .icons-rooms, .rooms .rooms-container .deluxe-room .icons-rooms {
   margin-top: 4%;
-  width: 30%;
+  width: 100%;
   min-height: 7%;
   display: flex;
   justify-content: space-between;
@@ -493,16 +493,19 @@ body {
     justify-content: space-around;
   }
   .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
-    padding: 2%;
+    padding: 1%;
     height: 30%;
     width: 48%;
     margin-top: 2%;
   }
   .rooms .rooms-container .single-room h3, .rooms .rooms-container .single-room small, .rooms .rooms-container .single-room p, .rooms .rooms-container .double-room h3, .rooms .rooms-container .double-room small, .rooms .rooms-container .double-room p, .rooms .rooms-container .deluxe-room h3, .rooms .rooms-container .deluxe-room small, .rooms .rooms-container .deluxe-room p {
     font-size: 3vw;
+    padding-left: 20%;
   }
   .rooms .rooms-container .single-room .icons-rooms, .rooms .rooms-container .double-room .icons-rooms, .rooms .rooms-container .deluxe-room .icons-rooms {
     font-size: 3vw;
+    padding-left: 1%;
+    width: 100%;
   }
   .rooms .rooms-container .single-room button, .rooms .rooms-container .double-room button, .rooms .rooms-container .deluxe-room button {
     font-size: 3vw;
@@ -604,9 +607,6 @@ body {
 
   .rooms .rooms-title {
     font-size: 1.6vw;
-  }
-  .rooms .single-room, .rooms .double-room, .rooms .deluxe-room {
-    padding: 2%;
   }
   .rooms .single-room h3, .rooms .single-room small, .rooms .single-room p, .rooms .double-room h3, .rooms .double-room small, .rooms .double-room p, .rooms .deluxe-room h3, .rooms .deluxe-room small, .rooms .deluxe-room p {
     font-size: 1.6vw;

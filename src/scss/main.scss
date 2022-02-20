@@ -72,15 +72,19 @@ body {
         justify-content: space-around;
         
           .single-room,.double-room,.deluxe-room{
-            padding: 2%;
+            padding: 1%;
             height: 30%;
             width: 48%;
             margin-top: 2%;
             h3,small,p{
               font-size: 3vw;
+              padding-left: 20%;
             }
             .icons-rooms{
               font-size: 3vw;
+              padding-left: 1%;
+              width: 100%;
+
             }
             button{
               font-size: 3vw;
@@ -211,7 +215,6 @@ body {
       font-size: 1.6vw;
     }
     .single-room,.double-room,.deluxe-room{
-      padding: 2%;
 
       h3,small,p{
         font-size: 1.6vw;
