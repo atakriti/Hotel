@@ -182,6 +182,7 @@ main .bg form button i {
   justify-content: space-between;
 }
 .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
+  padding: 2%;
   width: 30%;
   height: 100%;
   display: flex;
@@ -492,6 +493,7 @@ body {
     justify-content: space-around;
   }
   .rooms .rooms-container .single-room, .rooms .rooms-container .double-room, .rooms .rooms-container .deluxe-room {
+    padding: 2%;
     height: 30%;
     width: 48%;
     margin-top: 2%;
@@ -602,6 +604,9 @@ body {
 
   .rooms .rooms-title {
     font-size: 1.6vw;
+  }
+  .rooms .single-room, .rooms .double-room, .rooms .deluxe-room {
+    padding: 2%;
   }
   .rooms .single-room h3, .rooms .single-room small, .rooms .single-room p, .rooms .double-room h3, .rooms .double-room small, .rooms .double-room p, .rooms .deluxe-room h3, .rooms .deluxe-room small, .rooms .deluxe-room p {
     font-size: 1.6vw;
