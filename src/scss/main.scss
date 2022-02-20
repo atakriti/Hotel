@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import "./nav";
 @import "./main-container";
-@import "./mobile.scss";
 
 * {
   margin: 0;
@@ -159,4 +158,107 @@ body {
       }
 
  
+}
+// media query max992
+@media only screen and (max-width:992px) {
+  header {
+    ul{
+      min-width: 60%;
+    
+      li{
+      width:24%;
+        i{
+          font-size: 1.6vw;
+        }
+        a{
+          font-size: 1.6vw;
+        }
+      }
+    }
+    button{
+      font-size: 1.6vw;
+      width: 13%;
+    }
+  }
+  // main
+  main .bg{
+    form{
+      width: 90%;
+      .form-container{
+        .checkin-out,.adult-kids{
+          label{
+            font-size: 1.6vw;
+          }
+          input{
+            font-size: 1.6vw;
+          }
+        }
+      }
+      h1{
+        font-size: 1.6vw;
+      }
+      button{
+        font-size: 1.6vw;
+      }
+    }
+  }
+  .rooms{
+    .rooms-title{
+      font-size: 1.6vw;
+    }
+    .single-room,.double-room,.deluxe-room{
+      h3,small,p{
+        font-size: 1.6vw;
+      }
+      .icons-rooms{
+        font-size: 1.6vw;
+        
+      }
+      
+    }
+  }
+  .about{
+    .text-map{
+      .about-text{
+        font-size: 1.6vw;
+        
+      }
+    }
+    
+  }
+  // our hotels 
+  .our-hotels{
+    .our-hotels-text{
+      font-size: 1.6vw;
+      width: 60%;
+    }
+  }
+  // get offer
+  .get-offer{
+    form{
+      font-size: 1.6vw;
+      input{
+        font-size: 1.6vw;
+      }
+      button{
+        font-size: 1.6vw;
+      }
+    }
+  }
+  // contact
+  .contact{
+    form{
+      h3,p{
+        font-size: 1.6vw;
+      }
+    }
+    .contact-inputs{
+      input{
+        font-size: 1.6vw;
+      }
+      button{
+        font-size: 1.6vw;
+      }
+    }
+  }
 }

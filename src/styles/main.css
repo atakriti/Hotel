@@ -563,5 +563,78 @@ body {
     font-size: 2vw;
   }
 }
+@media only screen and (max-width: 992px) {
+  header ul {
+    min-width: 60%;
+  }
+  header ul li {
+    width: 24%;
+  }
+  header ul li i {
+    font-size: 1.6vw;
+  }
+  header ul li a {
+    font-size: 1.6vw;
+  }
+  header button {
+    font-size: 1.6vw;
+    width: 13%;
+  }
+
+  main .bg form {
+    width: 90%;
+  }
+  main .bg form .form-container .checkin-out label, main .bg form .form-container .adult-kids label {
+    font-size: 1.6vw;
+  }
+  main .bg form .form-container .checkin-out input, main .bg form .form-container .adult-kids input {
+    font-size: 1.6vw;
+  }
+  main .bg form h1 {
+    font-size: 1.6vw;
+  }
+  main .bg form button {
+    font-size: 1.6vw;
+  }
+
+  .rooms .rooms-title {
+    font-size: 1.6vw;
+  }
+  .rooms .single-room h3, .rooms .single-room small, .rooms .single-room p, .rooms .double-room h3, .rooms .double-room small, .rooms .double-room p, .rooms .deluxe-room h3, .rooms .deluxe-room small, .rooms .deluxe-room p {
+    font-size: 1.6vw;
+  }
+  .rooms .single-room .icons-rooms, .rooms .double-room .icons-rooms, .rooms .deluxe-room .icons-rooms {
+    font-size: 1.6vw;
+  }
+
+  .about .text-map .about-text {
+    font-size: 1.6vw;
+  }
+
+  .our-hotels .our-hotels-text {
+    font-size: 1.6vw;
+    width: 60%;
+  }
+
+  .get-offer form {
+    font-size: 1.6vw;
+  }
+  .get-offer form input {
+    font-size: 1.6vw;
+  }
+  .get-offer form button {
+    font-size: 1.6vw;
+  }
+
+  .contact form h3, .contact form p {
+    font-size: 1.6vw;
+  }
+  .contact .contact-inputs input {
+    font-size: 1.6vw;
+  }
+  .contact .contact-inputs button {
+    font-size: 1.6vw;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
